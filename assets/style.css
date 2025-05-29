@@ -4,7 +4,7 @@
     --cor-primaria: #2d0d05;
     --cor-secundaria: #7e230c;
     --cor-terciaria: #0D0D0D:
-    --cor-texto-claro: #e4e4e4;
+    --cor-texto: #e4e4e4;
     --font-principal: 'Montserrat', sans-serif;
     --fonte-secundaria: 'Merriweather', serif;
 }
@@ -90,7 +90,7 @@ header {
 /*-----SEÇÃO HOME ----- */
 
 .linha_home {
-    background-image: url(https://images.squarespace-cdn.com/content/v1/63fc9d916fb0b31ab06c0ead/34ff468e-3358-4e3f-ac4d-9d9b717e29bb/restaurante-japones-morumbi.jpg);
+    background-image: url("../assets/fundo.png");
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -100,14 +100,14 @@ header {
 .conteiner {
     width: 1200px;
     height: 100%;
-    padding-top: 110px;
+    padding-top: 75px;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 50px;
-    font-family: var(--fonte-secundaria)
+    font-size: 35px;
+    font-family: var(--fonte-secundaria);
 }
 .linha {
     width: 100%;
@@ -139,6 +139,7 @@ header {
     flex-wrap: wrap;
     padding: 10px;
     gap: 50px;
+    font-family: 'Montserrat', sans-serif;
 }
 /*----- CARDS_CARDÁPIO -----*/
 .card {
@@ -210,7 +211,7 @@ footer {
     font-family: var(--fonte-secundaria);
     font-weight: 400;
     font-size: 1rem;
-    color: var(--cor-texto-claro);
+    color: #e4e4e4;
     text-align: center;
     line-height: 1.6;
 }
