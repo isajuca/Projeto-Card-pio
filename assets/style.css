@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+DK+Loopet:wght@100..400&display=swap');
 
+:root {
+    --cor-primaria: #2d0d05;
+    --cor-secundaria: #7e230c;
+    --cor-terciaria: #0D0D0D:
+    --cor-texto-claro: #e4e4e4;
+    --font-principal: 'Montserrat', sans-serif;
+    --fonte-secundaria: 'Merriweather', serif;
+}
 * {
     margin: 0;
     padding: 0;
@@ -18,13 +26,12 @@ body {
     flex-direction: column;
     height: 100%;
     background-color: #e4e4e4;
-    font-family: "Montserrat", sans-serif;
-    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
 }
 header {
     width: 100%;
     height: 100px;
-    background-color: #2d0d05;
+    background-color: var(--cor-primaria);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,7 +41,7 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fonte-principal)
 }
 
 /* ----- LOGO ----- */
@@ -50,7 +57,7 @@ header {
     margin-right: 20px;
 }
 .logo h1 {
-     font-family: "Merriweather", serif;
+     font-family: var(--fonte-secundaria);
     font-size: 25px ;
     color: white;
     
@@ -68,7 +75,7 @@ header {
     gap: 20px;
     justify-content: center;
     align-items: center;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fonte-secundaria)
 }
 /* ESPECIFICIDADE */
 .menu ul li a{
@@ -100,7 +107,7 @@ header {
     align-items: center;
     text-align: center;
     font-size: 50px;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fonte-secundaria)
 }
 .linha {
     width: 100%;
@@ -109,7 +116,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fonte-principal);
 }
 
 .conteiner_c {
@@ -121,7 +128,7 @@ header {
     justify-content: space-evenly;
     flex-direction: column;
     font-size: 15px;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fonte-secundaria);
 }
 .estrutura_cards {
     width: 100%;
@@ -171,18 +178,51 @@ header {
 
 footer {
     width: 100%;
-    height: 50px;
-    background-color: #d86226;
+    padding: 50px 0;
+    background-color: var(--cor-primaria);
     display: flex;
     justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 10px;
+    flex-wrap: wrap;
+    gap: 30px;
 }
+
 .coluna_rodape {
-    width: 400px;
-    height: 100%;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_rodape {
     display: flex;
     align-items: center;
-    
+    gap: 20px;
+}
+
+.logo_rodape img {
+    height: 130px;
+    width: 130px;
+    object-fit: contain;
+}
+
+.coluna_rodape h2 {
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--cor-texto-claro);
+    text-align: center;
+    line-height: 1.6;
+}
+
+.contato {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 5px 0;
+}
+
+.contato img {
+    width: 30px;
+    height: 30px;
 }
